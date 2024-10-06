@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 20px 90px;
+    background-color: rgb(252, 248, 245);
+    font-family: sans-serif;
+    /* max-width: 1000px; */
+}
+h1{
+margin-left: 40px;
+/* display: inline-block; */
+/* border: 1px solid; */
+}
+.overall{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card{
+    max-width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    /* border: 1px solid; */
+    p{
+        margin: 0px;
+        font-size: 12px;
+        color: rgb(147, 143, 143);
+    }
+    h6{
+        margin: 10px 0px;
+        font-size: 13px;
+        color: rgb(111,100,98);
+    
+    }
+    h5{
+        margin: 10px 0px;
+        color: rgb(199, 73, 9);
+    }
+
+}
+.image{
+    width: 200px;
+    border-radius: 10px;
+}
+.cart, #hidden{
+    height: 35px;
+    width: 110px;
+    border-radius: 15px;
+    position: relative;
+    left: 38px;
+    bottom: 15px;
+
+}
+.cart{
+    color: rgb(111,100,98);
+    font-weight: 600;
+    font-size: 11px;
+    border: 1px solid rgb(147,143,143);
+}
+#hidden{
+    display: flex;
+    align-items: center;
+    width: 110px;
+    justify-content: space-around;
+    /* bottom: 49px; */
+    display: none;
+    background-color: rgb(193, 48, 48);
+
+    #pplus, #minus{
+        border-radius: 8px;
+        width: 20px;
+        border: none;
+    }
+}
+
+.right{
+    width: 270px;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;  
+    background-color: white;
+   
+    h2{
+        margin: 10px 10px 0px 10px;
+        color: rgb(228, 72, 15);
+
+    }
+    img{
+        width: 100px;
+        margin: 0px 70px;
+    }
+    h4{
+       font-size: 12px;
+       font-weight: 500;
+       color: rgb(111,100,98);
+       text-align: center;
+    }
+    button{
+        /* width: 230px; */
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(245, 69, 69);
+        display: none;
+
+    }
+}
+.orderCart{
+    display: none;
+    /* border: 1px solid; */
+    width: 250px;
+    height: 50px;
+    /* line-height: 10px; */
+    margin: 0;
+    h6{
+        margin:15px auto;
+        /* margin-bottom: 0; */
+    }
+}
+#remove{
+    width: 13px;
+    height: 13px;
+    border: 1px solid;
+    border-radius:5px;
+    margin: auto 0;
+    
+}
+.order1{
+    width: 240px;
+    
+    p, h6{
+        margin: 5px 0px;
+        font-size: 12px;
+        /* border-bottom: 1px solid; */
+    }
+
+}
+.orderD{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 ;
+    width: 150px;
+}
+.orderCartJ{
+    width: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; 
+    border-bottom: 1px solid rgb(147, 143, 143);
+
+}
+#quantity{
+    color: hsl(14, 86%, 42%);
+}
+.ordertot{
+    display: flex;
+    justify-content: space-between;
+   
+}
+#carbon{
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid;
+    background-color: rgb(244, 215, 221);
+    display: none;
+    img{
+        width: 15px;
+        margin: 0px 7px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
+/* #cart-items{
+    border: 1px solid;
+    margin-bottom: 50px;
+} */
