@@ -2,7 +2,6 @@ let menuData = [];
 let cart = [];
 let totalPrice = 0;
 
-// DOM elements
 const menuContainer = document.getElementById('menu-container');
 const cartQty = document.getElementById('cart-qty');
 const cartItems = document.getElementById('cart-items');
@@ -12,7 +11,6 @@ const orderCart = document.getElementById('order-cart');
 const carbonNeutral = document.getElementById('carbon-neutral');
 const confirmBtn = document.getElementById('confirm-btn');
 
-// Load menu from data.json
 function loadMenu() {
     fetch('./data.json')
         .then(response => {
@@ -150,7 +148,6 @@ function updateCartDisplay() {
         carbonNeutral.classList.add('active');
         confirmBtn.classList.add('active');
         
-        // Update cart items display
         let cartHTML = '';
         cart.forEach((item) => {
             cartHTML += `
@@ -173,21 +170,16 @@ function updateCartDisplay() {
     }
 }
 
-// Confirm order handler
 confirmBtn.addEventListener('click', function() {
     if (cart.length > 0) {
         alert(`Order confirmed! Total: $${totalPrice.toFixed(2)}\n\nItems:\n${cart.map(item => `${item.quantity}x ${item.name}`).join('\n')}`);
         
-        // Reset cart
         cart = [];
         updateCartDisplay();
         
-        // Reset all product displays
         menuData.forEach((_, index) => {
             resetProductDisplay(index);
         });
     }
 });
-
-// Initialize the app
 loadMenu();
