@@ -123,12 +123,12 @@ h1 {
   padding: 24px;
   border-radius: 12px;
   height: fit-content;
-}
-.right h2 {
-  color: rgb(228, 72, 15);
-  margin: 0 0 24px 0;
-  font-size: 24px;
-  font-weight: bold;
+  h2 {
+    color: rgb(228, 72, 15);
+    margin: 0 0 24px 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
 }
 .emptyCart {
   text-align: center;
