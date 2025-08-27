@@ -133,16 +133,16 @@ h1 {
 .emptyCart {
   text-align: center;
   padding: 60px 20px;
-}
-.emptyCart img {
-  width: 128px;
-  margin-bottom: 16px;
-}
-.emptyCart h4 {
-  font-size: 14px;
-  font-weight: 600;
-  color: rgb(147, 143, 143);
-  margin: 0;
+  img {
+    width: 128px;
+    margin-bottom: 16px;
+  }
+  h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(147, 143, 143);
+    margin: 0;
+  }
 }
 .orderCart {
   display: none;
